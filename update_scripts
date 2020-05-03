@@ -1,0 +1,12 @@
+#!/bin/sh
+# Update all scripts or new scripts
+git fetch
+git pull
+
+FILES=$(pwd)/scripts/*
+for f in $FILES
+do
+  echo "Processing $f file..."
+  chmod +x $f
+  sudo cp $f /usr/local/bin
+done

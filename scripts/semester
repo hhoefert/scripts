@@ -1,6 +1,5 @@
 #!/bin/sh
 #Script to launch respective programs and folders
-# onedrive --synchronize
 cd ~/OneDrive/Studium/8.\ Semester\ -\ Master/
 if [ $# -gt 0 ]
 then 
