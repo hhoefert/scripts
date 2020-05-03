@@ -1,0 +1,35 @@
+#!/bin/sh
+#Script to launch respective programs and folders
+onedrive --synchronize
+cd ~/OneDrive/Studium/7.\ Semester\ -\ Master/
+if [ $# -gt 0 ]
+then 
+	if [ $1 = "ml" ]
+	then 
+		cd Machine\ Learning/
+		if [ $2 = "a" ] 
+		# stands for assignments
+		then
+			charm &
+			disown
+			konsole --workdir  ~/Git/machine-learning &
+			disown
+		fi
+	fi
+	if [ $1 = "itsec" ]
+	then
+		cd IT-Sec\ 2/
+	fi
+	if [ $1 = "mc" ]
+        then 
+                cd Introduction\ to\ Model\ Checking/
+        fi
+	if  [ $1 = "or1" ]
+	then
+		cd Operations\ Research\ 1/
+	fi
+	if [ $1 = "autoswt" ]
+	then
+		cd Applied\ Software\ Engineering\ within\ the\ life\ cycle\ of\ Automotive\ Electronics/
+	fi
+fi
