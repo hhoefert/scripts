@@ -1,0 +1,6 @@
+#!/bin/sh
+
+sudo apt-get update
+sudo apt-get upgrade
+dpkg --get-selections > ~/pkglist.txt
+echo "Package list saved to ~/pkglist.txt"
