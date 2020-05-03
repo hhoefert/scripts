@@ -7,9 +7,11 @@ This will fetch all new scripts and makes all of the scripts in the folder `/scr
 
 ## update
 Uses apt to update all existing packages and saves installed packages to ~/pkglist.txt.
-Use pkglist.txt to reinstall all packages: https://www.ostechnix.com/create-list-installed-packages-install-later-list-centos-ubuntu/
+Use pkglist.txt to reinstall all packages: <https://www.ostechnix.com/create-list-installed-packages-install-later-list-centos-ubuntu/>
+
 Usage: `update`
 
 ## semester
 This is a personal script, that navigates to the corresponding folder for the given course abbreviation. Also it syncs all changes from OneDrive.
+
 Usage: `. semester coursename`
