@@ -1,7 +1,7 @@
 #!/bin/sh
 #Script to launch respective programs and folders
-onedrive --synchronize
-cd ~/OneDrive/Studium/7.\ Semester\ -\ Master/
+# onedrive --synchronize
+cd ~/OneDrive/Studium/8.\ Semester\ -\ Master/
 if [ $# -gt 0 ]
 then 
 	if [ $1 = "ml" ]
@@ -16,20 +16,17 @@ then
 			disown
 		fi
 	fi
-	if [ $1 = "itsec" ]
+	if [ $1 = "lopro" ]
 	then
-		cd IT-Sec\ 2/
+		cd Logikprogrammierung
 	fi
-	if [ $1 = "mc" ]
-        then 
-                cd Introduction\ to\ Model\ Checking/
-        fi
-	if  [ $1 = "or1" ]
+	if [ $1 = "swa" ]
+    then 
+        cd Software\ Architectures
+    fi
+	if  [ $1 = "swp" ]
 	then
-		cd Operations\ Research\ 1/
-	fi
-	if [ $1 = "autoswt" ]
-	then
-		cd Applied\ Software\ Engineering\ within\ the\ life\ cycle\ of\ Automotive\ Electronics/
+		cd Software\ Projektmanagement
 	fi
 fi
+onedrive --synchronize
