@@ -1,31 +1,23 @@
 #!/bin/sh
 #Script to launch respective programs and folders
-cd ~/OneDrive/Studium/8.\ Semester\ -\ Master/
+cd ~/OneDrive/Studium/9.\ Semester\ -\ Master/
 if [ $# -gt 0 ]
 then 
-	if [ $1 = "ml" ]
+	if [ $1 = "ids" ]
 	then 
-		cd Machine\ Learning/
-		if [ $2 = "a" ] 
-		# stands for assignments
-		then
-			charm &
-			disown
-			konsole --workdir  ~/Git/machine-learning &
-			disown
-		fi
+		cd Introduction\ to\ Data\ Science/
+		# if [ $2 = "a" ] 
+		# # stands for assignments
+		# then
+		# 	charm &
+		# 	disown
+		# 	konsole --workdir  ~/Git/machine-learning &
+		# 	disown
+		# fi
 	fi
-	if [ $1 = "lopro" ]
-	then
-		cd Logikprogrammierung
-	fi
-	if [ $1 = "swa" ]
-    then 
-        cd Software\ Architectures
-    fi
-	if  [ $1 = "swp" ]
-	then
-		cd Software\ Projektmanagement
-	fi
+	# if [ $1 = "lopro" ]
+	# then
+	# 	cd Logikprogrammierung
+	# fi
 fi
 onedrive --synchronize
