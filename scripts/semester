@@ -19,6 +19,10 @@ then
 	then
 		cd SE\ Seminar
 	fi
+	if [ $1 = "or" ]
+	then
+		cd OR\ Praktikum
+	fi
 	# if [ $1 = "lopro" ]
 	# then
 	# 	cd Logikprogrammierung
