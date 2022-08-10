@@ -1,0 +1,12 @@
+#!/bin/sh
+google-chrome &
+sleep .5
+discord &
+sleep 1
+
+cd ~/Git/master-thesis/
+code . 
+dolphin . & 
+okular ~/Git/master-thesis/doc/2022_Hoefert_Masterthesis.pdf &
+
+exec sleep 1
